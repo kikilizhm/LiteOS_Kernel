@@ -43,7 +43,6 @@ extern "C" {
 #endif /* __cplusplus */
 #endif /* __cplusplus */
 
-
 /*
 * memcheck error code: the stack have not inited
 * Value: 0x02000100
@@ -86,6 +85,28 @@ extern "C" {
 */
 #define  OS_ERRNO_MEMCHECK_DISABLED      LOS_ERRNO_OS_ERROR(LOS_MOD_MEM, 0x5)
 
+/**
+ *@ingroup los_memory
+ *@brief Initialization the memory system.
+ *
+ *@par Description:
+ *<ul>
+ *<li>This API is used to initialization the memory system.</li>
+ *</ul>
+ *@attention
+ *<ul>
+ *<li>None.</li>
+ *</ul>
+ *
+ *@param  None.
+ *
+ *@retval UINT32 Initialization result.
+ *@par Dependency:
+ *<ul><li>los_memory.ph: the header file that contains the API declaration.</li></ul>
+ *@see None.
+ *@since Huawei LiteOS V100R001C00
+ */
+extern UINT32 osMemSystemInit(VOID);
 
 #ifdef __cplusplus
 #if __cplusplus

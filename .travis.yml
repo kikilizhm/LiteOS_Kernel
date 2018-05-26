@@ -13,5 +13,17 @@ before_install:
   -  sudo apt-get install gcc-arm-embedded -y
 
 
-script: make ARCH=arm PLAT=STM32F429I_DISCO CPU=cortex-m4 ARMV=armv7e-m V=2
+script:
+  -  cd targets/FRDM_KW41Z/GCC
+  -  make
+  -  cd ../../../
+  -  cd targets/STM32F103RB_NUCLEO/GCC
+  -  make
+  -  cd ../../../
+  -  cd targets/STM32F429IGTx_FIRE/GCC
+  -  make
+  -  cd ../../../
+  -  cd targets/STM32F746ZG_NUCLEO/GCC
+  -  make
+
 

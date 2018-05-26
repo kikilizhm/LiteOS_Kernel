@@ -1,11 +1,11 @@
 ## LiteOS贡献代码流程
 进行LiteOS的代码贡献可以遵循以下流程
 
-- 1 创建github账号
-- 2 fork LiteOS Kernel源代码
-- 3 创建开发分支
-- 4 同步LiteOS主仓库代码到fork的仓库
-- 5 提交pull request到LiteOS仓库
+1. 创建github账号
+2. fork LiteOS Kernel源代码
+3. 创建开发分支
+4. 同步LiteOS主仓库代码到fork的仓库
+5. 提交pull request到LiteOS仓库
 
 ### 1 创建GitHub账号
 
@@ -14,12 +14,12 @@
 
 ![](./meta/guides/github_regist.png)
 
-### 2 fork LiteOS Kernel源代码
+### 2 fork LiteOS源代码
 
 拥有Github账户后，则可以将LiteOS仓库fork到自己账户下，步骤如下：
 
 - 首先登录github账户
-- 然后在github中找到https://github.com/LITEOS/LiteOS_Kernel
+- 然后在github中找到https://github.com/LITEOS/LiteOS
 ![](./meta/guides/github_fork.png)
 
 - 点击fork按钮，将LiteOS的代码fork到自己账户下(比如：我的账户是mychaser)
@@ -27,13 +27,13 @@
 
 ![](./meta/guides/github_fork3.png)
 
-点击完成后，稍等一会就会自动跳转到自己账户下的LiteOS_Kernel位置。
+点击完成后，稍等一会就会自动跳转到自己账户下的LiteOS位置。
 
 ![](./meta/guides/github_fork4.png)
 
 ### 3 创建开发分支
 
-在自己的账户下的LiteOS_Kernel仓库下创建新的开发分支，开发新功能或者修正bug等等。
+在自己的账户下的LiteOS仓库下创建新的开发分支，开发新功能或者修正bug等等。
 
 ![](./meta/guides/github_fork5.png)
 
@@ -48,7 +48,7 @@
 
 - 开发的第一步，是clone代码到本地PC
   
-		git clone https://github.com/mychaser/LiteOS_Kernel.git
+		git clone https://github.com/mychaser/LiteOS.git
   
 		clone之后checkout到smartcar分支
 
@@ -58,7 +58,7 @@
 
 - 由于在开发的过程中，LiteOS的主仓库可能已经更新的许多新的内容，所以建议提交代码到自己账户下的仓库时先同步LiteOS的主仓库的内容，步骤示意如下：
 
-		git remote add upstream https://github.com/LITEOS/LiteOS_Kernel
+		git remote add upstream https://github.com/LITEOS/LiteOS
 
 		git remote update upstream
 
@@ -84,3 +84,5 @@
 如果没有冲突则会显示 3所示内容，否则需要先解决冲突然后重新创建pull request。
 
 选择完成后，并输入相关描述，最后点击绿色按钮 Create pull request 完成pull request的创建。
+
+注：请将以上示例图中的LiteOS_Kernel替换为LiteOS即可。

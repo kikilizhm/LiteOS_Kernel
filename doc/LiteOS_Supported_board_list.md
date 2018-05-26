@@ -1,18 +1,24 @@
 ## LiteOS支持的开发板种类
 
-LiteOS目前已经适配了18种开发板，其中包括ST、NXP、MIDMOTION、SILICON、ATMEL、GD等主流厂商的开发板
+LiteOS目前已经适配了30多种开发板，其中包括ST、NXP、GD、MIDMOTION、SILICON、ATMEL等主流厂商的开发板
 
 ## ST
 
-- STM32F411
+- STM32L053R8Tx
 
-- STM32F412
+- STM32F103RB
 
-- STM32F429
+- STM32F411RE
 
-- STM32F746
+- STM32F412ZG
 
-- STM32L476
+- STM32F429ZI
+
+- STM32F429IG
+
+- STM32L476RG
+
+- STM32F746ZG
 
 ## NXP
 
@@ -28,6 +34,10 @@ LiteOS目前已经适配了18种开发板，其中包括ST、NXP、MIDMOTION、S
 
 - MM32F103
 
+- MM32L373
+
+- MM32L073PF
+
 ## SILICON
 
 - efm32_stk3700
@@ -38,20 +48,48 @@ LiteOS目前已经适配了18种开发板，其中包括ST、NXP、MIDMOTION、S
 
 ## ATMEL
 
-- atsam4sd32c
+- ATSAM4S-XPRO
 
 - atsamd21
 
-- ArduinoM0Pro
-
+- ARDUINO ZERO PRO
 
 ## GD
-- Gd32f190
 
-- Gdf450
+- GD32F450I-EVAL
 
+- GD32F190R-EVAL
 
+- GD32F103C-EVAL
 
+- GD32F150R-EVAL
 
+- GD32F207C-EVAL
 
+## Nuvoton
 
+- NuTiny-NUC472H
+
+- NuTiny-Nano130K
+
+## Nordic Semiconductors
+
+- NRF52840-PDK
+
+- NRF52-DK
+
+## MediaTek
+
+- LINKIT7687HDK
+
+## TI SimpleLink
+
+- LAUNCHXL-CC3220SF
+
+## Microchip
+
+- ATSAME70Q21
+
+## ADI
+
+- ADuCM4050
